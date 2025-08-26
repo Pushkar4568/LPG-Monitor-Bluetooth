@@ -7,6 +7,7 @@
 #define RO       1000.0f  // 24 kΩ (calibrated in clean air)
 #define A        565.0f
 #define B        -1.48f
+// LPG(A=565,B=-1.48), CH4(A=393,B=-1.18), CO(A=472,B=-1.28), H2(A=575,B=-1.26)
 
 float MQ2_PPM_OP(int adc_val) {
     // Convert ADC reading to voltage
@@ -27,3 +28,4 @@ float MQ2_PPM_OP(int adc_val) {
 
     return ppm;
 }
+
